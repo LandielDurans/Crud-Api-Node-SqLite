@@ -22,11 +22,11 @@ Para rodar este projeto, você precisará ter:
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/LandielDurans/CRUD-com-Node-e-Sqlite.git
+   git clone https://github.com/LandielDurans/Crud-Api-Node-Sqlite.git
 
 2. Navegue até o diretório do projeto
    ```
-      cd CRUD-com-Node-e-Sqlite
+      cd Crud-Api-Node-Sqlite
 
 4. Instale as dependências
 ```bash
