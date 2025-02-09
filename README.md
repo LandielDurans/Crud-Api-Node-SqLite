@@ -65,8 +65,6 @@ Aqui está um exemplo que você pode usar:
 - URL: /products
 - Método: GET
 
-## Exemplo de uso
-
 ```Json
 {
   "name": "Nome do produto 1",
