@@ -60,7 +60,7 @@ Aqui está um exemplo que você pode usar:
   "stock": "Estoque do produto"
 }
 ```
-2. Listar todos os produtos
+1. Listar todos os produtos
 
 - URL: /products
 - Método: GET
@@ -80,7 +80,7 @@ Aqui está um exemplo que você pode usar:
 }
 ```
 
-3. Atualizar um produto
+2. Atualizar um produto
 
 - URL: /products:id
 - Método: PUT
@@ -94,7 +94,7 @@ Aqui está um exemplo que você pode usar:
 }
 ```
 
-4. Deletar um produto
+3. Deletar um produto
 
 - URL: /products:id
 - Método: DELETE
