@@ -4,9 +4,14 @@ Este é um projeto de uma API CRUD (Create, Read, Update, Delete) desenvolvido e
 
 ## Guia de Uso
 
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Configuração do Banco de Dados](#configuração-do-banco-de-dados)
+- [CRUD API em Node.js com Express, SQLite e Joi](#crud-api-em-nodejs-com-express-sqlite-e-joi)
+  - [Guia de Uso](#guia-de-uso)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Instalação](#instalação)
+  - [Configuração do Banco de Dados](#configuração-do-banco-de-dados)
+  - [Endpoints](#endpoints)
+  - [Validações](#validações)
+  - [Tecnologias](#tecnologias)
 
 ## Pré-requisitos
 
@@ -50,8 +55,6 @@ Este projeto utiliza o SQLite como banco de dados. O banco será gerado automati
 
 Aqui está um exemplo que você pode usar:
 
-## Exemplo de uso
-
 ```Json
 {
   "name": "Nome do produto",
@@ -60,7 +63,7 @@ Aqui está um exemplo que você pode usar:
   "stock": "Estoque do produto"
 }
 ```
-1. Listar todos os produtos
+2. Listar todos os produtos
 
 - URL: /products
 - Método: GET
@@ -80,7 +83,7 @@ Aqui está um exemplo que você pode usar:
 }
 ```
 
-2. Atualizar um produto
+3. Atualizar um produto
 
 - URL: /products:id
 - Método: PUT
@@ -94,7 +97,7 @@ Aqui está um exemplo que você pode usar:
 }
 ```
 
-3. Deletar um produto
+4. Deletar um produto
 
 - URL: /products:id
 - Método: DELETE

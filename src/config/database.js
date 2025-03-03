@@ -5,22 +5,27 @@ const sequelize = new Sequelize({
     storage: 'database.sqlite'
 })
 
-sequelize.authenticate()
-    .then(() => {
+const authenticateDatabase = async () => {
+    try {
+        await sequelize.authenticate()
         console.log('Conexão com o banco de dados estabelecida com sucesso')
-    })
-    .catch(err => {
-        console.console.error('Não foi possivel conectar ao banco de dados:', err);
 
-    })
+    } catch (error) {
+        console.console.error('Não foi possivel conectar ao banco de dados:', error);
+    }
+}
 
-sequelize.sync({ force: true })
-    .then(() => {
-        console.log('Tabelas sincronizadas com sucesso');
-    })
-    .catch(err => {
+const syncDatabase = async () => {
+    try {
+        const isDevelopment = process.env.NODE_ENV === 'development'
+        await sequelize.sync({force: isDevelopment})
+        console.log('Tabelas sincronizadas com sucesso.')
+    } catch (err) {
         console.error('Erro ao sincronizar tabelas:', err);
-    });
+    }
+}
 
+authenticateDatabase();
+syncDatabase();
 
 module.exports = sequelize
