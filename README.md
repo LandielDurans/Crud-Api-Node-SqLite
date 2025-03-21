@@ -30,7 +30,7 @@ Para rodar este projeto, você precisará ter:
    git clone https://github.com/LandielDurans/Crud-Api-Node-Sqlite.git
 
 2. Navegue até o diretório do projeto
-   ```
+   ```bash
       cd Crud-Api-Node-Sqlite
 
 4. Instale as dependências
